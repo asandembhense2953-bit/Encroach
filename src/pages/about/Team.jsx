@@ -12,7 +12,7 @@ export default function Team() {
         <ul className="team-grid">
           {members.map((m) => (
             <li key={m.name}>
-              <img src={m.photo} alt={m.name} width="120" height="120" loading="lazy" />
+                            <img src={`${import.meta.env.BASE_URL}${m.photo.slice(1)}`} alt={m.name} width="120" height="120" loading="lazy" />
               <h3>{m.name}</h3>
               <p>{m.role}</p>
             </li>

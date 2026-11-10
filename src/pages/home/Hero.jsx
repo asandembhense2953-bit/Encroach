@@ -39,7 +39,7 @@ export default function Hero() {
       onBlur={() => setPaused(false)}
     >
       <div className="hero-photo">
-        {photoOk && <img src="/hero.webp" alt="" onError={() => setPhotoOk(false)} />}
+              {photoOk && <img src={`${import.meta.env.BASE_URL}hero.webp`} alt="" onError={() => setPhotoOk(false)} />}
       </div>
 
       <div className="hero-panel">

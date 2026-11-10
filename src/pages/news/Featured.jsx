@@ -8,7 +8,7 @@ export default function Featured() {
 
   return (
     <section className="nws-featured wrap">
-      <img src={f.photo} alt="" />
+            <img src={`${import.meta.env.BASE_URL}${f.photo.slice(1)}`} alt="" />
       <div className="nws-featured-text">
         <span className="nws-pill lime">{f.tag}</span>
         <p className="nws-meta">

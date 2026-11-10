@@ -16,7 +16,7 @@ export default function NewsList() {
         {shown.map((n) => (
           <li key={n.id}>
             <div className="nws-photo">
-              <img src={n.photo} alt="" loading="lazy" />
+                            <img src={`${import.meta.env.BASE_URL}${n.photo.slice(1)}`} alt="" loading="lazy" />
               <span className={`nws-pill ${n.tone}`}>{n.tag}</span>
             </div>
             <div className="nws-card-body">
