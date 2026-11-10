@@ -1,0 +1,7 @@
+/* Pages that are not built yet. */
+
+.soon { min-height: 70vh; display: grid; place-items: center; padding: calc(var(--nav-h) + 64px) var(--gutter) 64px; background: linear-gradient(160deg, var(--navy-800), var(--navy-900)); }
+.soon-inner { display: grid; gap: 18px; justify-items: start; width: min(560px, 100%); }
+.soon .eyebrow { color: var(--lime); margin: 0; }
+.soon h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(2.2rem, 5vw, 3.4rem); text-transform: capitalize; }
+.soon p { font-size: 1.15rem; color: rgba(255,255,255,.88); }
