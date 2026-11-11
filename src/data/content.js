@@ -28,15 +28,6 @@ export const NAV = [
   {
     label: "Services",
     href: "/services",
-    // CHANGED: services from the HTML file
-    children: [
-      { label: "Software Development", href: "/services" },
-      { label: "Cyber Security", href: "/services" },
-      { label: "DevOps & Automation", href: "/services" },
-      { label: "Structured Cabling", href: "/services" },
-      { label: "Network Engineering", href: "/services" },
-      { label: "Consulting and Advisory Services", href: "/services" },
-    ],
   },
   {
     label: "News",
@@ -215,10 +206,9 @@ export const FOOTER = {
 
 // Replace each url with the real company page when you have it.
 export const SOCIAL = [
-  { id: "facebook", label: "Facebook", url: "#" },
-  { id: "linkedin", label: "LinkedIn", url: "https://www.linkedin.com/in/encroach-business-solutions-and-projects-it-business-solutions" },
-  { id: "youtube", label: "YouTube", url: "#" },
+  { id: "whatsapp", label: "WhatsApp", url: "https://wa.me/27828707544" },
   { id: "x", label: "X", url: "https://x.com/EncroachAnd" },
+  { id: "linkedin", label: "LinkedIn", url: "https://www.linkedin.com/in/encroach-business-solutions-and-projects-it-business-solutions" },
 ];
 
 
