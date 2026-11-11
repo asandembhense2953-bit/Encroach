@@ -10,6 +10,7 @@ import "./styles/contact.css";
 import "./styles/about.css";
 import "./styles/services.css";
 import "./styles/news.css";
+import "./styles/projects.css";
 
 
 createRoot(document.getElementById("root")).render(

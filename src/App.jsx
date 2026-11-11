@@ -6,6 +6,7 @@ import Services from "./pages/Services.jsx";
 import News from "./pages/News.jsx";
 import Contact from "./pages/Contact.jsx";
 import ComingSoon from "./pages/ComingSoon.jsx";
+import Projects from "./pages/Projects.jsx";
 
 // One line per page. Build a page, then swap its ComingSoon for the real one.
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="services" element={<Services />} />
         <Route path="news" element={<News />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="projects" element={<Projects />} />
         <Route path="*" element={<ComingSoon />} />
       </Route>
     </Routes>

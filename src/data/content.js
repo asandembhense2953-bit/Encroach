@@ -46,14 +46,7 @@ export const NAV = [
       { label: "Events", href: "/news" },
     ],
   },
-  {
-    label: "Gallery",
-    href: "/gallery",
-    children: [
-      { label: "Photos", href: "/gallery" },
-      { label: "Videos", href: "/gallery" },
-    ],
-  },
+    { label: "Delivered Projects", href: "/projects" },
   { label: "Contact Us", href: "/contact" },
 ];
 

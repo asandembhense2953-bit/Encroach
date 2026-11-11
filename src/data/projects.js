@@ -1,0 +1,42 @@
+export const PROJECTS = {
+  hero: {
+    eyebrow: "REAL RESULTS",
+    title: "Delivered Projects",
+    tagline: "Recent projects that delivered impact.",
+  },
+  items: [
+    {
+      id: "mri-lease",
+      tag: "Software Development",
+      tone: "blue",
+      photo: "/projects/MRI Software South Africa.webp",
+      title: "Property management and financial - lease administration for MRI Real Estate",
+      text: "Delivered a secure mobile & digital lease report used by 180,000+ customers. Reduced transaction time by 87%.",
+      duration: "4 months",
+      place: "Johannesburg",
+      result: "+320% ROI",
+    },
+    {
+      id: "sandton-hq",
+      tag: "Cyber Security + Cabling",
+      tone: "lime",
+      photo: "/projects/Old Mutual Limited.webp",
+      title: "End-to-end cyber defence & fibre cabling for a 12-floor Sandton HQ",
+      text: "Zero-trust architecture + CAT6A structured cabling. Achieved POPIA compliance in 6 weeks.",
+      duration: "8 weeks",
+      place: "Sandton",
+      result: "100% uptime since go-live",
+    },
+    {
+      id: "logistics-devops",
+      tag: "DevOps + Network",
+      tone: "blue",
+      photo: "/projects/Ni-Da Transport & Logistics Group.webp",
+      title: "Multi-cloud DevOps pipeline & SD-WAN for a logistics company",
+      text: "Cut deployment time from 3 days to 8 minutes. Reduced network costs by R1.2 million annually.",
+      duration: "3 months",
+      place: "Newcastle",
+      result: "99.99% availability",
+    },
+  ],
+};
