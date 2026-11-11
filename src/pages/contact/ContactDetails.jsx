@@ -14,7 +14,11 @@ export default function ContactDetails() {
                 <Icon />
                 <div>
                   <strong>{d.label}</strong>
-                  <span>{d.value}</span>
+                                   {d.href ? (
+                    <a href={d.href} target="_blank" rel="noreferrer">{d.value}</a>
+                  ) : (
+                    <span>{d.value}</span>
+                  )}
                 </div>
               </li>
             );

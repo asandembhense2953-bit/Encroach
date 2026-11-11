@@ -188,7 +188,7 @@ export const SOCIAL = [
   { id: "facebook", label: "Facebook", url: "#" },
   { id: "linkedin", label: "LinkedIn", url: "#" },
   { id: "youtube", label: "YouTube", url: "#" },
-  { id: "x", label: "X", url: "#" },
+  { id: "x", label: "X", url: "https://x.com/EncroachAnd" },
 ];
 
 
@@ -210,13 +210,14 @@ export const CONTACT = {
     "Consulting and Advisory Services",
     "Other",
   ],
-  details: [
+    details: [
     { icon: "mail", label: "Email", value: "info@encroach.co.za" },
-    { icon: "phone", label: "Phone", value: "+27 31 123 4567" },
-    { icon: "pin", label: "Address", value: "123 Business Ave, Durban, KZN" },
+    { icon: "phone", label: "Phone", value: "+27 82 870 7544" },
+    { icon: "phone", label: "WhatsApp", value: "Chat on WhatsApp with +27 82 870 7544", href: "https://wa.me/27828707544" },
+    { icon: "pin", label: "Visit our HQ", value: "143 River Rd, Kyalami Height, Midrand, Johannesburg, 1684" },
     { icon: "clock", label: "Office Hours", value: "Mon – Fri: 08:00 – 17:00" },
   ],
-  mapUrl: "https://www.google.com/maps?q=Durban&output=embed",
+  mapUrl: "https://www.google.com/maps?q=143+River+Rd,+Kyalami+Heights,+Midrand,+1684&output=embed",
 };
 
 
