@@ -2,6 +2,7 @@ import Hero from "./home/Hero.jsx";
 import Intro from "./home/Intro.jsx";
 import Services from "./home/Services.jsx";
 import Process from "./home/Process.jsx";
+import Testimonials from "./home/Testimonials.jsx";
 import News from "./home/News.jsx";
 import CallToAction from "./home/CallToAction.jsx";
 
@@ -12,6 +13,7 @@ export default function Home() {
       <Intro />
       <Services />
       <Process />
+      <Testimonials />
       <News />
       <CallToAction />
     </>

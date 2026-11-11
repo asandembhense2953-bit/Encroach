@@ -35,6 +35,12 @@
 .tag { justify-self: start; padding: 4px 12px; border-radius: 99px; background: var(--soft); color: var(--navy-600); font-weight: 700; font-size: .82rem; letter-spacing: .04em; }
 .news-card .more { margin-top: 6px; }
 
+/* testimonials */
+.quote { display: grid; gap: 18px; align-content: space-between; margin: 0; }
+.quote blockquote { margin: 0; font-style: italic; line-height: 1.55; color: var(--muted); }
+.quote strong { display: block; font-size: 1.05rem; }
+.quote span { color: var(--teal); font-size: .9rem; }
+
 /* how we work */
 .steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; }
 .steps li { padding-top: 18px; border-top: 2px solid var(--line); position: relative; }
