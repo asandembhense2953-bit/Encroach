@@ -140,30 +140,12 @@ export const FOOTER = {
         { label: "About Encroach", to: "/about" },
         { label: "Our Services", to: "/services" },
         { label: "Projects", to: "/projects" },
+        { label: "News & Updates", to: "/news" },
         { label: "Careers", to: "/careers" },
         { label: "Contact Us", to: "/contact" },
       ],
     },
-    {
-      title: "FOR OUR CLIENTS",
-      links: [
-        { label: "Business Solutions", to: "/business-solutions" },
-        { label: "Project Support", to: "/project-support" },
-        { label: "Client Portal", to: "/client-portal" },
-        { label: "FAQs", to: "/faqs" },
-        { label: "Support", to: "/support" },
-      ],
-    },
-    {
-      title: "RESOURCES",
-      links: [
-        { label: "Documentation", to: "/documentation" },
-        { label: "News & Updates", to: "/news" },
-        { label: "Case Studies", to: "/case-studies" },
-        { label: "Downloads", to: "/downloads" },
-        { label: "Help Centre", to: "/help-centre" },
-      ],
-    },
+    
   ],
   connect: {
     title: "CONNECT WITH US",
