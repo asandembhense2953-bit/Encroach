@@ -58,7 +58,7 @@
 .details li { display: grid; grid-template-columns: 28px 1fr; gap: 18px; align-items: start; }
 .details svg { color: var(--amber); margin-top: 2px; }
 .details strong { display: block; font-size: 1.1rem; }
-.details span, .details a { color: rgba(255, 255, 255, .92); }
+.details span, .details a { display: block; color: rgba(255, 255, 255, .92); }
 .details a { text-decoration: underline; text-underline-offset: 3px; }
 .details a:hover { color: var(--lime); }
 .contact-map { padding: 8px; overflow: hidden; }

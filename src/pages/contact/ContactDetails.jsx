@@ -9,15 +9,20 @@ export default function ContactDetails() {
         <ul className="details">
           {CONTACT.details.map((d) => {
             const Icon = CONTACT_ICONS[d.icon];
+            const lines = d.lines ?? [{ text: d.value, href: d.href }];
             return (
               <li key={d.label}>
                 <Icon />
                 <div>
                   <strong>{d.label}</strong>
-                                   {d.href ? (
-                    <a href={d.href} target="_blank" rel="noreferrer">{d.value}</a>
-                  ) : (
-                    <span>{d.value}</span>
+                  {lines.map((l) =>
+                    l.href ? (
+                      <a key={l.text} href={l.href} {...(l.href.startsWith("http") && { target: "_blank", rel: "noreferrer" })}>
+                        {l.text}
+                      </a>
+                    ) : (
+                      <span key={l.text}>{l.text}</span>
+                    )
                   )}
                 </div>
               </li>

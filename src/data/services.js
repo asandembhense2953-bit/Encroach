@@ -43,13 +43,15 @@ export const SERVICES = {
     },
     {
       icon: "consulting",
-      title: "Consulting and Advisory",
+      title: "Consulting and Advisory Services",
       text: "Expert help with funding, grants and tender applications.",
       details: "We provide expert guidance to South African SMEs seeking funding and financial support. Our team assists with identifying opportunities and navigating the full application process for finance from various sources.",
       points: [
         "Funding needs assessment & strategy",
         "SETA grant & discretionary funding applications",
         "Tender preparation and submission support",
+        "Finance for operational needs and business expansion",
+        "Business case development and investment readiness",
       ],
     },
   ],

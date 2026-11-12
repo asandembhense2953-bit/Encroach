@@ -28,15 +28,6 @@ export const NAV = [
   {
     label: "Services",
     href: "/services",
-    // CHANGED: services from the HTML file
-    children: [
-      { label: "Software Development", href: "/services" },
-      { label: "Cyber Security", href: "/services" },
-      { label: "DevOps & Automation", href: "/services" },
-      { label: "Structured Cabling", href: "/services" },
-      { label: "Network Engineering", href: "/services" },
-      { label: "Consulting and Advisory Services", href: "/services" },
-    ],
   },
   {
     label: "News",
@@ -54,7 +45,7 @@ export const NAV = [
 export const SLIDES = [
   {
     tab: "INNOVATE",
-    lines: ["Secure.", "Inovate.", "Connect."],
+    lines: ["Secure.", "Innovate.", "Connect."],
     emphasis: " ",
     text: "Encroach Business Solutions & Projects delivers world-class Software Development, Cyber Security, DevOps, Structured Cabling & Network Engineering across South Africa.",
   },
@@ -67,12 +58,12 @@ export const SLIDE_INTERVAL_MS = 7000;
 
 export const INTRO = {
   eyebrow: "WHO WE ARE",
-  title: "Innovative business solutions. Lasting impact.",
-  text: "Encroach Business Solutions and Projects helps organisations plan smarter, deliver projects on time and grow the skills of their people.",
+  title: "A proudly South African technology powerhouse.",
+  text: "We blend deep local market insight with international best practices to deliver reliable, scalable, and future-proof technology solutions for small and medium-sized businesses.",
   points: [
-    "Clear advice built around your goals",
-    "Projects managed from first plan to final hand-over",
-    "Training that leaves your team stronger",
+    "100% black-owned and established in 2018",
+    "120+ projects delivered, 98% client retention",
+    "24/7 support across South Africa",
   ],
   cta: { label: "About Encroach", to: "/about" },
 };
@@ -82,22 +73,59 @@ export const SERVICES = {
   title: "Our services",
   items: [
     {
-      icon: "advisory",
-      title: "Business advisory",
-      text: "Practical guidance on strategy, systems and day-to-day operations.",
+      icon: "software",
+      title: "Software Development",
+      text: "Custom web and mobile apps, enterprise systems, AI solutions, and legacy modernisation.",
     },
     {
-      icon: "project",
-      title: "Project management",
-      text: "Plans, people and progress tracking that keep every project on course.",
+      icon: "security",
+      title: "Cyber Security",
+      text: "Penetration testing, SOC-as-a-Service, POPIA/GDPR compliance and zero-trust architecture.",
     },
     {
-      icon: "training",
-      title: "Training and development",
-      text: "Hands-on learning that builds confidence and lasting skills.",
+      icon: "devops",
+      title: "DevOps & Automation",
+      text: "CI/CD pipelines, infrastructure as code, Kubernetes, monitoring and cloud cost optimisation.",
+    },
+    {
+      icon: "cabling",
+      title: "Structured Cabling",
+      text: "CAT6A, fibre optic, data centre cabling and full building infrastructure.",
+    },
+    {
+      icon: "network",
+      title: "Network Engineering",
+      text: "Wi-Fi 6E, SD-WAN, firewall configuration, network segmentation and 5G-ready infrastructure.",
+    },
+    {
+      icon: "consulting",
+      title: "Consulting and Advisory Services",
+      text: "Expert guidance for South African SMEs seeking funding, grants and tender support.",
     },
   ],
   cta: { label: "View all services", to: "/services" },
+};
+
+export const TESTIMONIALS = {
+  eyebrow: "TESTIMONIALS",
+  title: "What our clients say",
+  items: [
+    {
+      quote: "Encroach transformed our outdated network infrastructure into a secure, lightning-fast backbone. Their team was professional, on time, and gave us peace of mind.",
+      name: "Thabo Mkhize",
+      role: "CEO, Kinno's (Newcastle)",
+    },
+    {
+      quote: "The custom inventory management software they built saved us over R800k in the first year. Their cyber security audit also prevented a major breach. 10/10 service!",
+      name: "Naledi Khumalo",
+      role: "Operations Director, Cape Agri Co-op",
+    },
+    {
+      quote: "DevOps transformation + full office cabling done in record time. Their team understood our business needs better than anyone else we've worked with.",
+      name: "Dr. Sipho Dlamini",
+      role: "IT Manager, Netcare Hospitals",
+    },
+  ],
 };
 
 export const PROCESS = {
@@ -132,7 +160,7 @@ export const CALL_TO_ACTION = {
 // ---------- Footer (shown on every page) ----------
 
 export const FOOTER = {
-  blurb: "Innovative business solutions for a smarter, more connected future.",
+  blurb: "Proudly South African. Powering the digital future of African businesses.",
   columns: [
     {
       title: "QUICK LINKS",
@@ -149,7 +177,7 @@ export const FOOTER = {
   ],
   connect: {
     title: "CONNECT WITH US",
-    text: "Let's build a better future together.",
+    text: "Johannesburg • Mpumalanga • Newcastle. Serving all of South Africa & SADC region.",
   },
   legal: [
     { label: "Privacy Policy", to: "/privacy" },
@@ -160,10 +188,9 @@ export const FOOTER = {
 
 // Replace each url with the real company page when you have it.
 export const SOCIAL = [
-  { id: "facebook", label: "Facebook", url: "#" },
-  { id: "linkedin", label: "LinkedIn", url: "#" },
-  { id: "youtube", label: "YouTube", url: "#" },
+  { id: "whatsapp", label: "WhatsApp", url: "https://wa.me/27828707544" },
   { id: "x", label: "X", url: "https://x.com/EncroachAnd" },
+  { id: "linkedin", label: "LinkedIn", url: "https://www.linkedin.com/in/encroach-business-solutions-and-projects-it-business-solutions" },
 ];
 
 
@@ -173,7 +200,7 @@ export const SOCIAL = [
 export const CONTACT = {
   eyebrow: "GET IN TOUCH",
   title: "Contact Us",
-  intro: "We’d love to hear from you. Send us a message and we’ll get back to you.",
+  intro: "Whether you need a full digital transformation, a security overhaul, or fibre cabling for your new office — our team is ready. We reply within 2 hours during business days.",
   // CHANGED: services from the HTML file
   subjects: [
     "General enquiry",
@@ -186,11 +213,25 @@ export const CONTACT = {
     "Other",
   ],
     details: [
-    { icon: "mail", label: "Email", value: "info@encroach.co.za" },
-    { icon: "phone", label: "Phone", value: "+27 82 870 7544" },
+    {
+      icon: "mail",
+      label: "Email the team",
+      lines: [
+        { text: "shabalalas@encroach.co.za", href: "mailto:shabalalas@encroach.co.za" },
+        { text: "madonselasp@encroach.co.za", href: "mailto:madonselasp@encroach.co.za" },
+      ],
+    },
+    {
+      icon: "phone",
+      label: "Call us directly",
+      lines: [
+        { text: "+27 82 870 7544", href: "tel:+27828707544" },
+        { text: "+27 78 160 5062", href: "tel:+27781605062" },
+      ],
+    },
     { icon: "phone", label: "WhatsApp", value: "Chat on WhatsApp with +27 82 870 7544", href: "https://wa.me/27828707544" },
     { icon: "pin", label: "Visit our HQ", value: "143 River Rd, Kyalami Height, Midrand, Johannesburg, 1684" },
-    { icon: "clock", label: "Office Hours", value: "Mon – Fri: 08:00 – 17:00" },
+    { icon: "clock", label: "Office Hours", value: "Mon – Fri: 08:00 – 17:00 SAST" },
   ],
   mapUrl: "https://www.google.com/maps?q=143+River+Rd,+Kyalami+Heights,+Midrand,+1684&output=embed",
 };
@@ -210,6 +251,7 @@ export const ABOUT = {
     paragraphs: [
       "Encroach Business Solutions and Projects is a 100% black-owned company. We are a proudly South African technology powerhouse.",
       "We blend deep local market insight with international best practices to deliver reliable, scalable, and future-proof technology solutions.",
+      "Our vision is to be the trusted partner that empowers small and medium-sized businesses by solving their most pressing challenges — from technical infrastructure and cybersecurity to operational efficiency and sustainable growth.",
     ],
   },
   mission: {
@@ -223,7 +265,7 @@ export const ABOUT = {
       {
         icon: "vision",
         title: "Our Vision",
-        text: "To be the trusted partner that empowers small and medium-sized businesses by solving their most pressing challenges.",
+        text: "To be the trusted partner that empowers small and medium-sized businesses by solving their most pressing challenges — from technical infrastructure and cybersecurity to operational efficiency and sustainable growth.",
       },
     ],
   },
