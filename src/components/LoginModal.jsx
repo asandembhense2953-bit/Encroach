@@ -28,9 +28,9 @@ export default function LoginModal({ onClose }) {
 
   return (
     <div className="scrim center" onMouseDown={(e) => e.target === e.currentTarget && onClose()}>
-      <div className="modal" role="dialog" aria-modal="true" aria-label="Member login">
+      <div className="modal" role="dialog" aria-modal="true" aria-label="Login">
         <div className="modal-top">
-          <h2>Member login</h2>
+          <h2>Login</h2>
           <button type="button" className="icon-btn dark" onClick={onClose} aria-label="Close">
             <CloseIcon />
           </button>
@@ -43,7 +43,7 @@ export default function LoginModal({ onClose }) {
             setMsg("Demo only. The college SSO button will redirect to the college sign-in page.");
           }}
         >
-          Continue with college account
+          Continue with Your account
         </button>
         <div className="or">or use your details</div>
         <form onSubmit={submit} noValidate>

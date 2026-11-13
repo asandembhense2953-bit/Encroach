@@ -13,7 +13,7 @@ export const NAV = [
     href: "/",
     children: [
       { label: "Overview", href: "/" },
-      { label: "Latest updates", href: "/news" },
+      
     ],
   },
   {
@@ -29,14 +29,7 @@ export const NAV = [
     label: "Services",
     href: "/services",
   },
-  {
-    label: "News",
-    href: "/news",
-    children: [
-      { label: "Latest news", href: "/news" },
-      { label: "Events", href: "/news" },
-    ],
-  },
+  
     { label: "Delivered Projects", href: "/projects" },
   { label: "Contact Us", href: "/contact" },
 ];
@@ -168,7 +161,7 @@ export const FOOTER = {
         { label: "About Encroach", to: "/about" },
         { label: "Our Services", to: "/services" },
         { label: "Projects", to: "/projects" },
-        { label: "News & Updates", to: "/news" },
+        
         { label: "Careers", to: "/careers" },
         { label: "Contact Us", to: "/contact" },
       ],
@@ -179,11 +172,7 @@ export const FOOTER = {
     title: "CONNECT WITH US",
     text: "Johannesburg • Mpumalanga • Newcastle. Serving all of South Africa & SADC region.",
   },
-  legal: [
-    { label: "Privacy Policy", to: "/privacy" },
-    { label: "Terms of Service", to: "/terms" },
-    { label: "Sitemap", to: "/sitemap" },
-  ],
+  
 };
 
 // Replace each url with the real company page when you have it.

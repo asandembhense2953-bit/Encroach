@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { NAV } from "../data/content.js";
 import { CloseIcon } from "./Icons.jsx";
 
-export default function Drawer({ onClose, onLogin }) {
+export default function Drawer({ onClose, onLogin, onSignUp }) {
   useEffect(() => {
     const onKey = (e) => e.key === "Escape" && onClose();
     document.addEventListener("keydown", onKey);
@@ -18,9 +18,14 @@ export default function Drawer({ onClose, onLogin }) {
             <CloseIcon />
           </button>
         </div>
-        <button type="button" className="btn lime wide" onClick={onLogin}>
-          Member login
-        </button>
+        <div className="drawer-actions">
+          <button type="button" className="btn lime" onClick={onLogin}>
+            Login
+          </button>
+          <button type="button" className="btn ghost" onClick={onSignUp}>
+            Sign up
+          </button>
+        </div>
         <nav className="drawer-nav" aria-label="Menu">
           {NAV.map((item) =>
             item.children ? (

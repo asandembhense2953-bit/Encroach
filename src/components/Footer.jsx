@@ -53,13 +53,6 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p>© {new Date().getFullYear()} Encroach Business Solutions and Projects. All Rights Reserved.</p>
-          <ul className="legal">
-            {FOOTER.legal.map((l) => (
-              <li key={l.label}>
-                <Link to={l.to}>{l.label}</Link>
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
     </footer>
